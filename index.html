@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherApp</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+   <div class="container">
+    <div class="weather-card">
+        <div class="input">
+            <div class="input-field">
+                <i class="fa-solid fa-location-dot loc"></i>
+            <input type="text" placeholder="Enter Your Location" class="inputcity" spellcheck="false">
+             <button id="searchb" class="search-btn">
+                 <i class="fa-solid fa-magnifying-glass search"></i>
+            </button>
+            </div>
+        </div>
+             <div class="img-cel">
+            <img src="Images/Flux_Dev_generate_a_vibrant_and_detailed_image_of_a_fair_and_p_1-removebg-preview.png" alt="" class="imgdis">
+            <h1 id="temp"></h1>
+            <p id="loc-name"></p>
+        </div>
+        <div class="wind-hum">
+            <div class="humidity">
+                <img src="Images/humidity-removebg-preview.png" alt="">
+                <div class="per">
+                     <p id="humidity"></p>
+                     <p>Humidity</p>
+                </div>               
+            </div>
+             <div class="wind">
+                <img src="Images/wind-removebg-preview.png" alt="">
+                 <div class="per">
+                     <p id="wind"></p>
+                     <p>Wind Speed</p>
+                </div>   
+            </div>
+        </div>
+       
+    </div>
+   </div> 
+   <script src="script.js"></script>
+</body>
+</html>

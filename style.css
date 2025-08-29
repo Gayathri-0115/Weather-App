@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Dancing+Script:wght@400..700&family=Delius&family=Libertinus+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Mystery+Quest&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Pacifico&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-image: url(./Images/pexels-simon73-1323550.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    width: 100%;
+    max-width: 350px;
+    position: absolute;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.weather-card{
+    width: 100%;
+    position: absolute;
+    border: 1px rgb(179, 179, 158) solid; 
+    border-radius: 30px;  
+    backdrop-filter: blur(25px);   
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+.weather-card:hover{
+    transform: scale(1.03);
+}
+.input{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2rem;   
+    align-items: center; 
+    gap: 0.5em;
+}
+input[type="text"]{
+    border: none;
+    outline: none;
+    padding: 0.7rem;
+    border-radius: 25px;
+    background-color:transparent;
+    color: black;
+    font-size: 1rem;
+}
+.loc{
+    padding-left: 0.8em;
+    color: black;
+}
+#loc-name{
+    font-weight: bold;
+    color: black;
+    font-size: 1.2rem;
+}
+.input-field{
+    background-color:transparent;
+    color: black;
+    border-radius: 25px;
+    border: 1px rgb(179, 179, 158) solid; 
+}
+button{
+    background-color:black;
+    color: white;
+    border: none;
+    outline: none;
+    padding: 0.7rem;
+    border-radius: 25px;
+    cursor: pointer;
+    border: 1px rgb(179, 179, 158) solid; 
+    font-weight: bold;
+    font-size: 1em;
+}
+input[type="text"]::placeholder{
+    color: black;
+    font-size: 1rem;
+}
+#temp{
+    display: none;
+}
+#loc-name{
+    display: none;
+}
+.img-cel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+.img-cel img{
+    width: 200px;
+    height: 200px;
+}
+.wind-hum{
+    display: none;
+    justify-content: space-around;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+.humidity{
+    display: flex;
+   font-weight: 500;
+}
+.humidity img{
+    height: 50px;
+    width: 50px;
+}
+.wind{
+    display: flex; 
+    font-weight: 500;
+}
+.wind img{
+    height: 50px;
+    width: 50px;
+}
+@media screen and (max-width:768px) {
+    .container{
+        width: 100%;
+        max-width:315px;        
+    }
+    .weather-card{
+        width: 100%;
+    }
+    .input{
+        margin-top: 2rem;
+    }
+    input[type="text"]{
+        padding: 0.2 rem;
+    }  
+    .input-field{
+        border-radius: 20px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    button{
+        padding: 0.6rem;
+        font-size: 0.9em;
+    }
+}
